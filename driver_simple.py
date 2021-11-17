@@ -14,8 +14,8 @@ def bc_test_questions():
     
     try:
         with engine.prove_goal('bc_simple_rules_questions.hero_question($bring)') as gen: #STUDENTS: you will need to edit this line
-            for vars, plan in gen:
-                print("You should bring: %s" % (vars['bring'])) #STUDENTS: you will need to edit this line
+            # for vars, plan in gen:
+            #     print("You should bring: %s" % (vars['bring'])) #STUDENTS: you will need to edit this line
 
     except Exception:
         # This converts stack frames of generated python functions back to the
