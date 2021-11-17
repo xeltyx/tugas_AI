@@ -1,36 +1,37 @@
 # bc_simple_rules.krb
 
-no_rain
-    use what_to_bring(no_rain_gear)
+heroes_thor
+    use hero_question(your_hero_is_thor)
     when
-        questions.is_raining(False)
+        questions.is_hero_man(True)
+        questions.is_superhuman(True)
+        questions.is_from_earth(False)
+        questions.is_fly(True)
+        questions.is_mask(False)
+        questions.is_weapon(True)
 
-what_to_bring_raincoat
-    use what_to_bring(raincoat)
+heroes_blackwidow
+    use hero_question(your_hero_is_black_widow)
     when
-        questions.is_raining(True)
-        questions.is_windy(False)
-	
-what_to_bring_umbrella
-    use what_to_bring(umbrella)
-    when
-        questions.is_raining(True)
-        questions.is_windy(True)
+        questions.is_hero_man(False)
+        questions.is_superhuman(False)
+        questions.is_from_earth(True)
+        questions.is_fly(False)
+        questions.is_mask(True)
+        questions.is_weapon(True)
 
-what_to_bring_marshmellos
-    use what_to_bring(marshmellos)
+heroes_ant_man
+    use hero_question(your_hero_is_ant_man)
     when
-        questions.any_disasters($ans)
-        check $ans in (1,)
-	
-what_to_bring_kite
-    use what_to_bring(kite)
-    when
-        questions.any_disasters($ans)
-        check $ans in (2,3)
+        questions.is_hero_man(True)
+        questions.is_superhuman(True)
+        questions.is_from_earth(True)
+        questions.is_fly(False)
+        questions.is_mask(True)
+        questions.is_weapon(False)
 
-what_to_bring_tissues
-    use what_to_bring(tissues)
-    when
-        questions.any_disasters($ans)
-        check $ans in (4,)
+
+
+
+
+
