@@ -17,7 +17,7 @@ heroes_blackwidow
         questions.is_superhuman(False)
         questions.is_from_earth(True)
         questions.is_fly(False)
-        questions.is_mask(True)
+        questions.is_mask(False)
         questions.is_weapon(True)
 
 heroes_ant_man
